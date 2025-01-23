@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.webkit-center{
+  text-align: -webkit-center;
+}
+
+.btn-mustard:hover{
+  background-color: #FFC300;
+  color: white;
+}
+
+.btn-mustard{
+  background-color: #000000;
+  color: white;
+}
+
+.text-grey{
+  color: #a7a7a7;
+}
+
+.content {
+  position: absolute;      /* Elemen anak diposisikan secara absolut */
+  top: 50%;                /* Menempatkan konten di tengah secara vertikal */
+  left: 50%;               /* Menempatkan konten di tengah secara horizontal */
+  transform: translate(-50%, -50%); /* Menggeser konten ke tengah tepat */
+}
+
+.center-container {
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
+  height: 100vh;           /* Agar container memiliki tinggi penuh viewport */
+}
